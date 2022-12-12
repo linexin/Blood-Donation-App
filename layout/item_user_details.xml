@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="4dp"
+	app:cardCornerRadius="20dp"
+	>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/layout_border">
+
+
+		<ImageView
+			android:id="@+id/imageView2"
+			android:layout_width="65dp"
+			android:layout_height="65dp"
+			android:layout_margin="10dp"
+			android:padding="10dp"
+			android:layout_centerInParent="true"
+			android:layout_alignParentLeft="true"
+			app:srcCompat="@drawable/blood_drop_logo" />
+
+		<LinearLayout
+			android:layout_toRightOf="@id/imageView2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Name"
+				android:textColor="@color/black"
+				android:textStyle="bold"
+				android:padding="4dp"
+				android:id="@+id/tvName"
+				android:drawableStart="@drawable/ic_person"
+				android:drawablePadding="10dp"
+				android:layout_margin="2dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="PhoneNo"
+				android:drawableStart="@drawable/ic_phone_no"
+				android:drawablePadding="10dp"
+				android:textColor="@color/black"
+				android:textStyle="bold"
+				android:padding="4dp"
+				android:id="@+id/tvPhoneNo"
+				android:layout_margin="2dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Blood Group"
+				android:textColor="@color/black"
+				android:textStyle="bold"
+				android:padding="4dp"
+				android:id="@+id/tvBloodGroup"
+				android:drawableStart="@drawable/ic_blood_drop"
+				android:drawablePadding="10dp"
+				android:layout_margin="2dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Address"
+				android:textColor="@color/black"
+				android:textStyle="bold"
+				android:padding="4dp"
+				android:id="@+id/tvAddress"
+				android:drawableStart="@drawable/ic_location"
+				android:drawablePadding="10dp"
+				android:layout_margin="2dp"/>
+
+
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
